@@ -1,43 +1,90 @@
-body{
-    background-color: #F9F7F7;
-}
-
-.primary-menu{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.primary-menu {
-    background-color: #F9F7F7;
-    padding: 10px;
-    text-align: center; /* Centrera menyelementen horisontellt */
-}
-
-.primary-menu ul {
-    list-style-type: none;
+body {
     margin: 0;
     padding: 0;
-}
+    background-color: #DBE2EF;
+    font-weight: 400;
+  }
+  
+  .Header-container {
+    max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  }
+  
+  header {
+    background-color: #DBE2EF;
+  }
+  
+  
+  
+  nav {
+    float: right;
+    background-color: #DBE2EF; 
+    padding: 25px;
+    padding-top: 25px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding-right: 20px;
+    list-style: none;
+    display: flex; /*så det blir horisontiellt */
+  }
+  
+  nav li {
+    margin-right: 60px;
 
-.primary-menu li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.primary-menu a {
+  }
+  
+  nav a {
+    color: #112D4E;
     text-decoration: none;
-    padding: 5px 10px;
-    color: #3F72AF;
-}
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    display: block; 
+    padding: 5 /* öka för mer storlek mellan */
+  }
+  
+  nav a:hover {
+    color: black;
+  }
 
-.primary-menu a:hover {
-    background-color: #ddd;
-}
+  .Info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #112D4E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  .image-left {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .image-right {
+    float: right;
+    margin-left: 20px;
+  }
 
-.primary-menu h1 {
-    display: inline; /* Visa h1-taggen som en del av menyn */
-    font-size: 2em; /* Justera storleken efter behov */
-    margin: 0 10px; /* Avstånd mellan h1-taggen och menulänkarna */
-    color: #3F72AF; /* Färg för h1-taggen */
-    font-family: 'Montserrat';
-}
+  .image-center {
+    display: block;
+    margin: 20px auto;
+    
+  }
+  
