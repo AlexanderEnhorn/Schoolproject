@@ -3,12 +3,13 @@ body {
     padding: 0;
     background-color: #DBE2EF;
     font-weight: 400;
+    
   }
   
   .Header-container {
-    max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
   }
   
   header {
@@ -21,18 +22,18 @@ body {
     float: right;
     background-color: #DBE2EF; 
     padding: 25px;
-    padding-top: 25px;
+    padding-top: 2.5rem ;
   }
   
   nav ul {
     margin: 0;
-    padding-right: 20px;
+    padding-right: 10rem;
     list-style: none;
     display: flex; /*så det blir horisontiellt */
   }
   
   nav li {
-    margin-right: 60px;
+    margin-right: 4rem;
 
   }
   
@@ -40,7 +41,7 @@ body {
     color: #112D4E;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     display: block; 
@@ -48,18 +49,34 @@ body {
   }
   
   nav a:hover {
-    color: black;
+    color: pink;
   }
 
   .Info-container {
-    max-width: 800px;
+    max-width: 100rem;
     margin: 0 auto;
-    padding: 40px;
+    padding: 4rem;
     text-align: center;
+    
   }
   
+  .Kontakt-container{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 4rem;
+    text-align: justify;
+  }
+
+  .Catering-container{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 4rem;
+    text-align: justify;
+
+  }
+
   h1 {
-    margin-bottom: 20px;
+    margin: 10px;
     color: #112D4E;
     font-family: 'Montserrat', sans-serif;
     font-size: 42px;
@@ -75,11 +92,15 @@ body {
     float: left;
     margin-right: 20px;
     margin-top: 20px;
+    width: 30%;
+    height: auto;
   }
   
   .image-right {
     float: right;
     margin-left: 20px;
+    width: 20%;
+    height: auto;
   }
 
   .image-center {
@@ -88,3 +109,27 @@ body {
     
   }
   
+  .menu-image{
+    width: 20%;
+    height: auto;
+    
+  }
+
+  .Meny-container{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 4rem;
+  }
+
+  .Logo{
+    width: 20%;
+    height: auto;
+  }
+
+  @media (max-width:601px) {
+    .Info-container {
+      max-width: 100%;
+      
+    }
+
+  }
