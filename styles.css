@@ -3,36 +3,33 @@ body {
     padding: 0;
     background-color: #DBE2EF;
     font-weight: 400;
-    
+    font-family:'Montserrat', sans-serif ;
+
   }
   
-  .Header-container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
-  }
-  
-  header {
+  .Header{
+    text-align: center;
     background-color: #DBE2EF;
+    padding: 2rem;
+
+
   }
-  
-  
   
   nav {
-    float: right;
     background-color: #DBE2EF; 
-    padding: 25px;
-    padding-top: 2.5rem ;
+    padding: 0px;
+    padding-top: 2rem ;
   }
   
   nav ul {
     margin: 0;
-    padding-right: 10rem;
-    list-style: none;
-    display: flex; /*så det blir horisontiellt */
+    padding: 0;
+    text-align: center;
+
   }
-  
+
   nav li {
+    display: inline-block;
     margin-right: 4rem;
 
   }
@@ -45,7 +42,7 @@ body {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     display: block; 
-    padding: 5 /* öka för mer storlek mellan */
+    text-align: center;
   }
   
   nav a:hover {
@@ -53,7 +50,7 @@ body {
   }
 
   .Info-container {
-    max-width: 100rem;
+    max-width: 100%;
     margin: 0 auto;
     padding: 4rem;
     text-align: center;
@@ -61,18 +58,63 @@ body {
   }
   
   .Kontakt-container{
-    max-width: 100rem;
+    max-width: 100%;
     margin: 0 auto;
     padding: 4rem;
     text-align: justify;
   }
 
   .Catering-container{
-    max-width: 100rem;
+    max-width: 100%;
     margin: 0 auto;
     padding: 4rem;
     text-align: justify;
 
+  }
+
+  .Meny-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .menu-item img {
+    width: 48%; /* Bredden för varje bild, justera vid behov */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item:last-child {
+    margin-right: 0;
+  }
+  
+  .menu-item ul {
+    width: 48%; /* Bredden för listan, justera vid behov */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .menu-item li {
+    margin-bottom: 10px;
+  }
+
+  
+
+  .About-container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4rem;
+    text-align: justify;
   }
 
   h1 {
@@ -80,13 +122,25 @@ body {
     color: #112D4E;
     font-family: 'Montserrat', sans-serif;
     font-size: 42px;
+    padding-left: 1rem;
+  }
+
+  h2{
+    color: #112D4E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-left: 1rem;
+
   }
   
   p {
     font-size: 18px;
     color: black;
     margin-bottom: 15px;
+    padding-left: 2rem  ;
   }
+  
+
   
   .image-left {
     float: left;
@@ -96,11 +150,20 @@ body {
     height: auto;
   }
   
+
+  
   .image-right {
     float: right;
     margin-left: 20px;
     width: 20%;
     height: auto;
+  }
+
+  .Info-bottom-image{
+   width: 50%;
+   height: auto ;
+   display: block;
+   margin: auto; 
   }
 
   .image-center {
@@ -109,27 +172,18 @@ body {
     
   }
   
-  .menu-image{
+ 
+
+
+  .Logo{
     width: 20%;
     height: auto;
     
   }
 
-  .Meny-container{
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 4rem;
-  }
-
-  .Logo{
-    width: 20%;
+  .About-image3{
+    width: 50%;
     height: auto;
-  }
-
-  @media (max-width:601px) {
-    .Info-container {
-      max-width: 100%;
-      
-    }
-
+    float:right;
+    margin-left: 20px;
   }
