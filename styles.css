@@ -16,21 +16,24 @@ body {
   }
   
   nav {
-    background-color: #DBE2EF; 
-    padding: 0px;
-    padding-top: 2rem ;
+    background-color: #DBE2EF;
+    padding: 0;
+    padding-top: 2rem;
+    display: flex; /* Använd flexbox för att justera navigeringslänkarna */
+    justify-content: space-between; /* Placera länkarna jämnt mellan sidornas kantlinjer */
+    align-items: center; /* Centrera länkarna vertikalt */
   }
   
   nav ul {
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex; /* Använd flexbox för att placera länkarna i rad */
+    list-style: none;
 
   }
 
   nav li {
-    display: inline-block;
-    margin-right: 4rem;
+    margin-right: 3rem; /* Lägg till lite mellanrum mellan länkarna */
 
   }
   
@@ -38,10 +41,10 @@ body {
     color: #112D4E;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem; /* Justera textstorleken för bättre mobilsäkerhet */
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    display: block; 
+    display: block;
     text-align: center;
   }
   
@@ -73,23 +76,20 @@ body {
   }
 
   .Meny-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
   }
   
   .menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 
   .menu-item img {
-    width: 48%; /* Bredden för varje bild, justera vid behov */
-    height: auto;
-    margin-bottom: 10px;
+    width: 100%;
   }
   
   .menu-item:last-child {
@@ -97,15 +97,12 @@ body {
   }
   
   .menu-item ul {
-    width: 48%; /* Bredden för listan, justera vid behov */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+    width: 100%;
+    margin-top: 0.5rem;
   }
   
   .menu-item li {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
   }
 
   
@@ -118,26 +115,23 @@ body {
   }
 
   h1 {
-    margin: 10px;
+    font-size: 2rem;
+    margin: 0.5rem;
     color: #112D4E;
     font-family: 'Montserrat', sans-serif;
-    font-size: 42px;
-    padding-left: 1rem;
   }
 
   h2{
+    font-size: 1.5rem;
+    margin: 0.5rem;
     color: #112D4E;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    padding-left: 1rem;
-
   }
   
   p {
-    font-size: 18px;
+    font-size: 1rem;
+     margin-bottom: 1rem;
     color: black;
-    margin-bottom: 15px;
-    padding-left: 2rem  ;
   }
   
 
@@ -176,8 +170,9 @@ body {
 
 
   .Logo{
-    width: 20%;
+    width:20%;
     height: auto;
+      margin: 1rem auto;
     
   }
 
@@ -186,4 +181,66 @@ body {
     height: auto;
     float:right;
     margin-left: 20px;
+  }
+
+  @media (min-width: 768px) {
+    /* Anpassningar för större skärmar */
+    .menu-item {
+      flex-basis: calc(50% - 1rem);
+      margin-right: 1rem;
+      text-align: left;
+    }
+  
+    .menu-item:last-child {
+      margin-right: 0;
+    }
+  
+    .menu-item ul {
+      width: 100%;
+    }
+    /* Anpassningar för större skärmar */
+    .Logo {
+      width: 20%;
+    }
+  
+    h1 {
+      margin: 10px;
+      color: #112D4E;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 42px;
+      padding-left: 1rem;
+    }
+  
+    h2 {
+      color: #112D4E;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      padding-left: 1rem;
+    }
+  
+    p {
+      font-size: 18px;
+      color: black;
+      margin-bottom: 15px;
+      padding-left: 2rem  ;
+    }
+  }
+
+  @media (max-width: 768px) {
+    /* Anpassningar för mobila enheter */
+  
+    nav {
+      flex-direction: column; /* Placera länkarna i en kolumn för mobila enheter */
+      padding-bottom: 1rem; /* Lägg till lite mellanrum under navigeringsfältet */
+    }
+  
+    nav ul {
+      flex-direction: row; /* Placera länkarna i en rad för mobila enheter */
+      justify-content: center; /* Centrera länkarna horisontellt */
+    }
+  
+    nav li {
+      margin-right: 0; /* Ta bort mellanrum mellan länkarna för mobila enheter */
+      margin-bottom: 3rem; /* Lägg till lite mellanrum under varje länk */
+    }
   }
