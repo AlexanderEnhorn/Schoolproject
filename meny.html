@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,400&family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,400&family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meny</title>
 </head>
 <body>
-  <header>
+  <header class="Header">
     <div class="Header-container">
       <nav>
         <ul>
@@ -24,46 +24,89 @@
     </div>
   </header>
   <div class="Meny-container">
-    <h1>Vår Meny&#129360;</h1>
-      <h2>Varma drycker</h2>
-      <div class="menu-item">
-        <img src="./Images/Coffe-milk.jpg" alt="Espresso" class="menu-image">
-        <ul>
-          <li>Espresso - 25 kr</li>
-          <li>Americano - 30 kr</li>
-          <li>Cappuccino - 35 kr</li>
-          <li>Latte - 35 kr</li>
-        </ul>
-      </div>
-      <h2>Kalla drycker</h2>
-      <div class="menu-item">
-        <img src="./Images/Coffe8.jpg" alt="Iced Coffee" class="menu-image">
-        <ul>
-          <li>Iced Latte - 40 kr</li>
-          <li>Frappés (karamell, choklad, vanilj) - 45 kr</li>
-          <li>Iced Tea - 35 kr</li>
-          <li>Iskaffe med vaniljglass - 45 kr</li>
-        </ul>
-      </div>
-      <h2>Mina bakverk</h2>
-      <div class="menu-item">
-        <img src="./Images/croissants-g1ccc25557_640.jpg" alt="Cupcakes" class="menu-image">
-        <ul>
-          <li>Cupcakes (Choklad, Vanilj, Hallon) - 20 kr/st</li>
-          <li>Macarons (Jordgubb, Citron, Pistage) - 15 kr/st</li>
-          <li>Tårtor och Bakverk - Priser varierar</li>
-          <li>Kanelbullar - 10 kr/st</li>
-        </ul>
-      </div>
-      <h2>Specialerbjudanden</h2>
-      <div class="menu-item">
-        <img src="./Images/brownie-548591_1920.jpg" alt="Specialerbjudanden" class="menu-image">
-        <ul>
-          <li>Kombinationspaket (Valfri bakverk och dryck till rabatterat pris) - 60 kr</li>
-          <li>Studentrabatt (Vid uppvisat mecenatkort) - 10% rabatt</li>
-          <li>Loyalty Program (var 10:e kaffe på huset) - Gratis</li>
-        </ul>
-      </div>
+    <h1>Vår Meny &#129360;</h1>
+
+    <div class="menu-item">
+        <img src="./Images/coffe.jpg" alt="bild på Kaffe" class="menu-image">
+        <div class="menu-details">
+          <ul>
+            <h2>Varma drycker</h2>
+            <li>Espresso - 25 kr</li>
+            <li>Americano - 30 kr</li>
+            <li>Cappuccino - 35 kr</li>
+            <li>Latte - 35 kr</li>
+            <li>Choklad Espresso - 30 kr</li>
+            <li>Macchiato - 30 kr</li>
+            <li>Mocha - 35 kr</li>
+            <li>Kaffe Latte - 35 kr</li>
+            <li>Vanilj Latte - 40 kr</li>
+            <li>Chai Latte - 40 kr</li>
+            <li>Espresso Con Panna - 25 kr</li>
+            <li>Caramel Macchiato - 40 kr</li>
+            <li>Caffè Americano - 30 kr</li>
+            <li>Cappuccino Misto - 35 kr</li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="./Images/iste.jpg" alt="bild på iste" class="menu-image">
+        <div class="menu-details">
+          <ul>
+            <h2>Kalla drycker</h2>
+            <li>Iced Latte - 40 kr</li>
+            <li>Frappés (karamell, choklad, vanilj) - 45 kr</li>
+            <li>Iced Tea - 35 kr</li>
+            <li>Iskaffe med vaniljglass - 45 kr</li>
+            <li>Iced Caramel Macchiato - 45 kr</li>
+            <li>Iced Vanilla Latte - 45 kr</li>
+            <li>Iced Mocha - 45 kr</li>
+            <li>Iced Chai Latte - 40 kr</li>
+            <li>Iced Caffè Americano - 35 kr</li>
+            <li>Iced Green Tea Latte - 40 kr</li>
+            <li>Cold Brew Coffee - 40 kr</li>
+            <li>Iced Caramel Frappuccino - 50 kr</li>
+            <li>Iced Chocolate Frappé - 50 kr</li>
+            <li>Lemonade Iced Tea - 35 kr</li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="./Images/bakverk.jpg" alt="bild på bakverk" class="menu-image">
+        <div class="menu-details">
+          <ul>
+            <ul>
+              <h2>Våra bakverk</h2>
+              <li>Cupcakes (Choklad, Vanilj, Hallon) - 20 kr/st</li>
+              <li>Macarons (Jordgubb, Citron, Pistage) - 15 kr/st</li>
+              <li>Tårtor och Bakverk - Priser varierar</li>
+              <li>Kanelbullar - 10 kr/st</li>
+              <li>Sockerkaka - 20 kr/st</li>
+              <li>Vaniljcupcakes med hallonfrosting - 25 kr/st</li>
+              <li>Brownies - 30 kr/st</li>
+              <li>Morotskaka - 25 kr/st</li>
+              <li>Bagels (välj mellan sesamfrö, valnöt, eller kanel) - 25 kr/st</li>
+              <li>Mandelkakor - 20 kr/st</li>
+              <li>Pajer (äppel, blåbär, rabarber) - 35 kr/st</li>
+              <li>Kokostoppar - 20 kr/st</li>
+              <li>Croissant (välj mellan naturell, choklad eller mandel) - 25 kr/st</li>
+              <li>Cheesecake (jordgubb, blåbär eller choklad) - 40 kr/st</li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="./Images/special.jpg" alt="Specialerbjudanden" class="menu-image">
+        <div class="menu-details">
+          <h2>Specialerbjudanden</h2>
+          <ul>
+            <li>Kombinationspaket (Valfri bakverk och dryck till rabatterat pris) - 60 kr</li>
+            <li>Studentrabatt (Vid uppvisat mecenatkort) - 10% rabatt</li>
+            <li>Loyalty Program (var 10:e kaffe på huset) - Gratis</li>
+          </ul>
+        </div>
+    </div>
   </div>
 
   <img src="./Images/Elegant logo (1).png" alt="Logo" class="Logo">

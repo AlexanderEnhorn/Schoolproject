@@ -1,118 +1,211 @@
+/* Grundstil för hela webbplatsen */
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #DBE2EF;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+.Header {
+  text-align: center;
+  background-color: #DBE2EF;
+  padding: 2rem;
+}
+
+/* Navigationsmeny */
+nav {
+  background-color: #DBE2EF;
+  padding: 0;
+  padding-top: 2rem;
+  display: flex; /* Använd flexbox för att justera navigeringslänkarna */
+  justify-content: center; /* Centrera länkarna horisontellt */
+  align-items: center; /* Centrera länkarna vertikalt */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex; /* Använd flexbox för att placera länkarna i rad */
+  list-style: none;
+}
+
+nav li {
+  margin: 0 2rem; /* Lägg till mellanrum mellan länkarna */
+}
+
+nav a {
+  color: #112D4E;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  text-align: center;
+}
+
+nav a:hover {
+  color: pink;
+}
+
+/* Info-container och övriga sektioner, lärde mig detta alldes försent att man kunde lägga ett ,tecken*/
+.Info-container,
+.Kontakt-container,
+.Catering-container,
+.Meny-container,
+.About-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 4rem 6rem; /* Uppdaterat padding för att ha 2rem på höger och vänster sida */
+  text-align: justify;
+}
+
+
+
+/* Stil för varje sektion inom "Om oss" */
+.About-section {
+  display: grid;
+  grid-template-columns: 1fr; /* En kolumn för mobila enheter */
+  grid-gap: 2rem; /* Lägg till mellanrum mellan bild och text */
+  align-items: center; /* Centrera innehållet vertikalt */
+}
+
+.About-image {
+  width: 100%; /* Bilden sträcker sig över hela kolumnen */
+  height: auto;
+}
+
+
+
+.menu-item {
+    display: flex; /* Placera bild och listelement i en rad */
+    align-items: center; /* Centrera innehållet vertikalt i raden */
+    margin-bottom: 4rem; /* Lägg till lite mellanrum mellan varje menykategori */
+}
+
+.menu-image {
+    width: 30%; /* Justera bredden för varje bild, om det behövs */
+    height: auto; /* Behåll bildens proportioner */
+    margin-right: 2rem; /* Lägg till lite mellanrum mellan bilden och listan */
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-details {
+    flex: 1; /* Använd flexbox för att låta listorna ta upp resterande utrymme */
+    padding-left: 2rem; /* Lägg till ett mellanrum mellan vänsterkanten och listan */
+}
+
+.menu-details h2 {
+    margin-bottom: 1rem; /* Lägg till lite mellanrum mellan rubriken och listorna */
+}
+
+.menu-details ul {
     margin: 0;
     padding: 0;
-    background-color: #DBE2EF;
-    font-weight: 400;
-    font-family:'Montserrat', sans-serif ;
+    list-style: none; /* Ta bort punktlistestil från listan */
+}
 
-  }
-  
-  .Header{
-    text-align: center;
-    background-color: #DBE2EF;
-    padding: 2rem;
+.menu-details li {
+    margin-bottom: 0.5rem; /* Lägg till lite mellanrum mellan varje listelement */
+}
 
+/* Bilder och andra element */
+.image-left {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 30%;
+    height: auto;
+}
 
-  }
-  
-  nav {
-    background-color: #DBE2EF;
-    padding: 0;
-    padding-top: 2rem;
-    display: flex; /* Använd flexbox för att justera navigeringslänkarna */
-    justify-content: space-between; /* Placera länkarna jämnt mellan sidornas kantlinjer */
-    align-items: center; /* Centrera länkarna vertikalt */
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex; /* Använd flexbox för att placera länkarna i rad */
-    list-style: none;
+.image-right {
+    float: right;
+    margin-left: 20px;
+    width: 20%;
+    height: auto;
+}
 
-  }
-
-  nav li {
-    margin-right: 3rem; /* Lägg till lite mellanrum mellan länkarna */
-
-  }
-  
-  nav a {
-    color: #112D4E;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5rem; /* Justera textstorleken för bättre mobilsäkerhet */
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+.Info-bottom-image {
+    width: 50%;
+    height: auto;
     display: block;
-    text-align: center;
-  }
-  
-  nav a:hover {
-    color: pink;
-  }
+    margin: auto;
+}
 
-  .Info-container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 4rem;
-    text-align: center;
-    
-  }
-  
-  .Kontakt-container{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 4rem;
-    text-align: justify;
-  }
+.image-center {
+    display: block;
+    margin: 20px auto;
+}
 
-  .Catering-container{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 4rem;
-    text-align: justify;
+.Logo {
+    width: 20%;
+    height: auto;
+    margin: 1rem auto;
+}
 
-  }
+.About-image3 {
+    width: 50%;
+    height: auto;
+    float: right;
+    margin-left: 20px;
+}
 
-  .Meny-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-  }
+/* Media Query för större skärmar */
+@media (min-width: 768px) {
+  /* Anpassningar för större skärmar */
   
   .menu-item {
-    flex-basis: 100%;
-    margin-bottom: 1rem;
-    text-align: center;
+    flex-basis: calc(50% - 1rem);
+    margin-right: 1rem;
+    text-align: left;
   }
 
-  .menu-item img {
-    width: 100%;
-  }
-  
   .menu-item:last-child {
     margin-right: 0;
   }
-  
+
   .menu-item ul {
     width: 100%;
-    margin-top: 0.5rem;
-  }
-  
-  .menu-item li {
-    margin-bottom: 0.5rem;
   }
 
   
 
-  .About-container{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 4rem;
-    text-align: justify;
+  /* Anpassningar för större skärmar */
+  .Logo {
+    width: 20%;
   }
+
+  h1 {
+    margin: 10px;
+    color: #112D4E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    padding-left: 1rem;
+  }
+
+  h2 {
+    color: #112D4E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-left: 1rem;
+  }
+
+  p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+    padding-left: 2rem;
+  }
+}
+
+/* Media Query för mobila enheter */
+@media (max-width: 768px) {
+  /* Anpassningar för mobila enheter */
 
   h1 {
     font-size: 2rem;
@@ -121,126 +214,31 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
 
-  h2{
+  h2 {
     font-size: 1.5rem;
     margin: 0.5rem;
     color: #112D4E;
     font-family: 'Montserrat', sans-serif;
+    
   }
-  
+
   p {
     font-size: 1rem;
-     margin-bottom: 1rem;
+    margin-bottom: 1rem;
     color: black;
   }
-  
 
-  
-  .image-left {
-    float: left;
-    margin-right: 20px;
-    margin-top: 20px;
-    width: 30%;
-    height: auto;
-  }
-  
-
-  
-  .image-right {
-    float: right;
-    margin-left: 20px;
-    width: 20%;
-    height: auto;
+  nav {
+    flex-direction: column; /* Placera länkarna i en kolumn för mobila enheter */
+    padding-bottom: 1rem; /* Lägg till lite mellanrum under navigeringsfältet */
   }
 
-  .Info-bottom-image{
-   width: 50%;
-   height: auto ;
-   display: block;
-   margin: auto; 
+  nav ul {
+    flex-direction: row; /* Placera länkarna i en rad för mobila enheter */
+    justify-content: center; /* Centrera länkarna horisontellt */
   }
 
-  .image-center {
-    display: block;
-    margin: 20px auto;
-    
+  nav li {
+    margin: 1rem 0; /* Centrera länkarna vertikalt med jämna mellanrum */
   }
-  
- 
-
-
-  .Logo{
-    width:20%;
-    height: auto;
-      margin: 1rem auto;
-    
-  }
-
-  .About-image3{
-    width: 50%;
-    height: auto;
-    float:right;
-    margin-left: 20px;
-  }
-
-  @media (min-width: 768px) {
-    /* Anpassningar för större skärmar */
-    .menu-item {
-      flex-basis: calc(50% - 1rem);
-      margin-right: 1rem;
-      text-align: left;
-    }
-  
-    .menu-item:last-child {
-      margin-right: 0;
-    }
-  
-    .menu-item ul {
-      width: 100%;
-    }
-    /* Anpassningar för större skärmar */
-    .Logo {
-      width: 20%;
-    }
-  
-    h1 {
-      margin: 10px;
-      color: #112D4E;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 42px;
-      padding-left: 1rem;
-    }
-  
-    h2 {
-      color: #112D4E;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 30px;
-      padding-left: 1rem;
-    }
-  
-    p {
-      font-size: 18px;
-      color: black;
-      margin-bottom: 15px;
-      padding-left: 2rem  ;
-    }
-  }
-
-  @media (max-width: 768px) {
-    /* Anpassningar för mobila enheter */
-  
-    nav {
-      flex-direction: column; /* Placera länkarna i en kolumn för mobila enheter */
-      padding-bottom: 1rem; /* Lägg till lite mellanrum under navigeringsfältet */
-    }
-  
-    nav ul {
-      flex-direction: row; /* Placera länkarna i en rad för mobila enheter */
-      justify-content: center; /* Centrera länkarna horisontellt */
-    }
-  
-    nav li {
-      margin-right: 0; /* Ta bort mellanrum mellan länkarna för mobila enheter */
-      margin-bottom: 3rem; /* Lägg till lite mellanrum under varje länk */
-    }
-  }
+}
