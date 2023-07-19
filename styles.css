@@ -7,32 +7,47 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Header */
-.Header {
-  text-align: center;
-  background-color: #DBE2EF;
-  padding: 2rem;
+h1 {
+  margin: 10px;
+  color: #112D4E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  padding-left: 1rem;
 }
 
-/* Navigationsmeny */
+h2 {
+  color: #112D4E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  padding-left: 1rem;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 15px;
+  padding-left: 2rem;
+}
+
+
+/* Navigationsmenyn */
 nav {
   background-color: #DBE2EF;
   padding: 0;
   padding-top: 2rem;
-  display: flex; /* Använd flexbox för att justera navigeringslänkarna */
-  justify-content: center; /* Centrera länkarna horisontellt */
-  align-items: center; /* Centrera länkarna vertikalt */
+  display: flex; 
+  justify-content: center; /* Centrera länkar horisontellt */
 }
 
 nav ul {
   margin: 0;
   padding: 0;
-  display: flex; /* Använd flexbox för att placera länkarna i rad */
+  display: flex; /* Använd flex för att placera länkar i rad */
   list-style: none;
 }
 
 nav li {
-  margin: 0 2rem; /* Lägg till mellanrum mellan länkarna */
+  margin: 0 4rem; /* Lägg till mellanrum mellan länkarna */
 }
 
 nav a {
@@ -64,57 +79,53 @@ nav a:hover {
 
 
 
-/* Stil för varje sektion inom "Om oss" */
+/*stilen för "Om oss" */
 .About-section {
   display: grid;
-  grid-template-columns: 1fr; /* En kolumn för mobila enheter */
-  grid-gap: 2rem; /* Lägg till mellanrum mellan bild och text */
-  align-items: center; /* Centrera innehållet vertikalt */
+  align-items: center; /* Centrera innehållet */
 }
 
 .About-image {
-  width: 100%; /* Bilden sträcker sig över hela kolumnen */
+  width: 70%; /* Bilden sträcker sig över hela kolumnen */
   height: auto;
 }
 
 
 
 .menu-item {
-    display: flex; /* Placera bild och listelement i en rad */
-    align-items: center; /* Centrera innehållet vertikalt i raden */
-    margin-bottom: 4rem; /* Lägg till lite mellanrum mellan varje menykategori */
+    display: flex; /* Placera bild och listelementen i en rad */
+    align-items: center; /* centerar allt på menyn*/
+    margin-bottom: 10rem; 
 }
 
 .menu-image {
-    width: 30%; /* Justera bredden för varje bild, om det behövs */
-    height: auto; /* Behåll bildens proportioner */
-    margin-right: 2rem; /* Lägg till lite mellanrum mellan bilden och listan */
+    width: 60%; 
+    height: auto; 
+    margin-right: 2rem; 
+    margin-left: 2rem;
 }
 
-.menu-item:last-child {
-    margin-right: 0;
-}
 
 .menu-details {
-    flex: 1; /* Använd flexbox för att låta listorna ta upp resterande utrymme */
-    padding-left: 2rem; /* Lägg till ett mellanrum mellan vänsterkanten och listan */
+    flex: 1; 
+    padding-left: 2rem; 
 }
 
 .menu-details h2 {
-    margin-bottom: 1rem; /* Lägg till lite mellanrum mellan rubriken och listorna */
+    margin-bottom: 1rem;
 }
 
 .menu-details ul {
     margin: 0;
     padding: 0;
-    list-style: none; /* Ta bort punktlistestil från listan */
+    list-style: disc; 
 }
 
 .menu-details li {
-    margin-bottom: 0.5rem; /* Lägg till lite mellanrum mellan varje listelement */
+    margin-bottom: 0.5rem; 
 }
 
-/* Bilder och andra element */
+/* Bilder och annat */
 .image-left {
     float: left;
     margin-right: 20px;
@@ -155,54 +166,6 @@ nav a:hover {
     margin-left: 20px;
 }
 
-/* Media Query för större skärmar */
-@media (min-width: 768px) {
-  /* Anpassningar för större skärmar */
-  
-  .menu-item {
-    flex-basis: calc(50% - 1rem);
-    margin-right: 1rem;
-    text-align: left;
-  }
-
-  .menu-item:last-child {
-    margin-right: 0;
-  }
-
-  .menu-item ul {
-    width: 100%;
-  }
-
-  
-
-  /* Anpassningar för större skärmar */
-  .Logo {
-    width: 20%;
-  }
-
-  h1 {
-    margin: 10px;
-    color: #112D4E;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 42px;
-    padding-left: 1rem;
-  }
-
-  h2 {
-    color: #112D4E;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    padding-left: 1rem;
-  }
-
-  p {
-    font-size: 18px;
-    color: black;
-    margin-bottom: 15px;
-    padding-left: 2rem;
-  }
-}
-
 /* Media Query för mobila enheter */
 @media (max-width: 768px) {
   /* Anpassningar för mobila enheter */
@@ -230,17 +193,17 @@ nav a:hover {
   }
 
   nav {
-    flex-direction: column; /* Placera länkarna i en kolumn för mobila enheter */
-    padding-bottom: 1rem; /* Lägg till lite mellanrum under navigeringsfältet */
+    flex-direction: column; 
+    padding-bottom: 1rem; 
   }
 
   nav ul {
-    flex-direction: row; /* Placera länkarna i en rad för mobila enheter */
-    justify-content: center; /* Centrera länkarna horisontellt */
+    flex-direction: row; 
+    justify-content: center; 
   }
 
   nav li {
-    margin: 1rem 0; /* Centrera länkarna vertikalt med jämna mellanrum */
+    margin: 1rem 0;
   }
   
   .About-image,
