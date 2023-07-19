@@ -215,6 +215,7 @@ nav a:hover {
   }
 
   h2 {
+    text-align: center;
     font-size: 1.5rem;
     margin: 0.5rem;
     color: #112D4E;
@@ -241,4 +242,17 @@ nav a:hover {
   nav li {
     margin: 1rem 0; /* Centrera länkarna vertikalt med jämna mellanrum */
   }
+  
+  .About-image,
+  .menu-image,
+  .Info-bottom-image,
+  .image-left,
+  .image-right,
+  .image-center,
+  .Logo,
+  .About-image3 {
+    width: 100%;
+    height: auto;
+  }
+
 }
