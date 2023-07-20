@@ -236,7 +236,7 @@
 
     /* Justera storleken på länktexten för att den ska få plats på mindre skärmar */
   .nav a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   }
