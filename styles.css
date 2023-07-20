@@ -204,26 +204,34 @@
       text-align: center; /* Centrera länkarna på mobila enheter */
     }
 
+       /* Justera textstorleken för länkarna på mobila enheter */
+    .Header a {
+    font-size: 1.5rem;
+   }
+
+   .Header a:hover {
+    color: pink;
+  }
+
     .Header ul {
-      display: flex; /* Använd Flexbox för att placera länkarna i en rad */
-      justify-content: center; /* Centrera länkarna horisontellt */
+      display: flex; /* Visa länkarna som en rad för mobila enheter */
+      flex-direction: column; /* Visa länkarna som en kolumn istället för en rad */
+      align-items: center; /* Centrera länkarna vertikalt */
       margin: 0;
       padding: 0;
     }
 
     .Header li {
-      flex: 1;  /* Justera bredden för varje länk så att alla får plats på en rad */
       text-align: center; /* Centrera texten horisontellt inuti varje länk */
-      padding: 0.5rem; /* Lägg till mellanrum mellan länkarna */
-    }
+      padding: 1rem; /* Lägg till mellanrum mellan länkarna */
+    } 
 
-    .menu-item {
-      margin-bottom: 1rem; /* Minska mellanrummet mellan menykategorierna på mobila enheter */
-    }
+    
 
-    /* Justera storleken på länktexten för att den ska få plats på mindre skärmar */
-  .nav a {
-    font-size: 16px;
+      /* Minska mellanrummet mellan menykategorierna på mobila enheter */
+  .menu-item {
+    margin-bottom: 2rem;
   }
+    
 
   }
