@@ -166,35 +166,20 @@
       margin-left: 20px;
   }
 
-  /* Media Query för större skärmar */
-  @media (min-width: 769px) {
-    /* Visa standard navbar för större skärmar */
-    nav ul {
-      display: flex;
-    }
-
-    /* Dölj hamburger-ikon för större skärmar */
-    .menu-icon {
-      display: none;
-    }
-  }
-
 
   /* Media Query för mobila enheter */
   @media (max-width: 768px) {
     /* Anpassningar för mobila enheter */
 
     h1 {
-      font-size: 2rem;
-      margin: 0.5rem;
+      font-size: 28px;
       color: #112D4E;
       font-family: 'Montserrat', sans-serif;
     }
 
     h2 {
       text-align: center;
-      font-size: 1.5rem;
-      margin: 0.5rem;
+      font-size: 24px;
       color: #112D4E;
       font-family: 'Montserrat', sans-serif;
       
@@ -202,7 +187,6 @@
 
     p {
       font-size: 1rem;
-      margin-bottom: 1rem;
       color: black;
     }
 
@@ -243,11 +227,16 @@
     .Header li {
       flex: 1;  /* Justera bredden för varje länk så att alla får plats på en rad */
       text-align: center; /* Centrera texten horisontellt inuti varje länk */
-      padding: 1rem; /* Lägg till mellanrum mellan länkarna */
+      padding: 0.5rem; /* Lägg till mellanrum mellan länkarna */
     }
 
     .menu-item {
-      margin-bottom: 2rem; /* Minska mellanrummet mellan menykategorierna på mobila enheter */
+      margin-bottom: 1rem; /* Minska mellanrummet mellan menykategorierna på mobila enheter */
     }
+
+    /* Justera storleken på länktexten för att den ska få plats på mindre skärmar */
+  .nav a {
+    font-size: 18px;
+  }
 
   }
