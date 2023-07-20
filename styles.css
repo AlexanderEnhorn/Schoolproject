@@ -77,24 +77,19 @@
     text-align: justify;
   }
 
-
-
-  /*stilen för "Om oss" */
   .About-section {
     display: grid;
     align-items: center; /* Centrera innehållet */
   }
 
   .About-image {
-    width: 70%; /* Bilden sträcker sig över hela kolumnen */
+    width: 70%;
     height: auto;
   }
 
-
-
   .menu-item {
-      display: flex; /* Placera bild och listelementen i en rad */
-      align-items: center; /* centerar allt på menyn*/
+      display: flex; 
+      align-items: center; 
       margin-bottom: 10rem; 
   }
 
@@ -106,14 +101,8 @@
   }
 
 
-  .menu-details {
-      flex: 1; 
-      padding-left: 2rem; 
-  }
-
-  .menu-details h2 {
-      margin-bottom: 1rem;
-  }
+  
+ 
 
   .menu-details ul {
       margin: 0;
@@ -123,6 +112,7 @@
 
   .menu-details li {
       margin-bottom: 0.5rem; 
+      margin-left: 3rem;
   }
 
   /* Bilder och annat */
@@ -186,7 +176,7 @@
     }
 
     p {
-      font-size: 1rem;
+      font-size: 16px;
       color: black;
     }
 
@@ -200,13 +190,10 @@
     .Logo,
     .About-image3 {
       max-width: 100%;
+      height: auto;
       margin: 0 auto;
-      padding: 2rem; /* Justera padding för att ge mer utrymme på sidorna */
+      padding: 1rem; /* Justera padding för att ge mer utrymme på sidorna */
       text-align: justify;
-    }
-    
-    .Header ul {
-      display: none;
     }
 
     /* Visa menyn som en vertikal navbar för mobila enheter */
