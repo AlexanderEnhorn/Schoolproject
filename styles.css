@@ -224,24 +224,16 @@ nav a:hover {
     display: block;
     cursor: pointer;
     font-size: 2rem;
-  }
-
-  .menu-icon.active + .Header-container nav ul {
-    display: flex;
-    flex-direction: column;
-  }
+  } 
 
   .mobile-menu-list {
     display: none;
   }
   
-
   .menu-icon.active + nav ul {
     display: flex;
     flex-direction: column;
   }
-  
-  
 
   .mobile-menu-list li {
     margin: 1rem 0;
@@ -261,6 +253,31 @@ nav a:hover {
     text-align: justify;
   }
   
+  .Header ul {
+    display: none;
+  }
+
+   /* Visa menyn som en vertikal navbar för mobila enheter */
+   .Header {
+    background-color: #DBE2EF;
+    padding: 0;
+    padding-top: 2rem;
+    text-align: center; /* Centrera länkarna på mobila enheter */
+  }
+
+  .Header ul {
+    display: flex; /* Använd Flexbox för att placera länkarna i en rad */
+    justify-content: center; /* Centrera länkarna horisontellt */
+    margin: 0;
+    padding: 0;
+  }
+
+  .Header li {
+    flex: 1;  /* Justera bredden för varje länk så att alla får plats på en rad */
+    text-align: center; /* Centrera texten horisontellt inuti varje länk */
+    padding: 1rem; /* Lägg till mellanrum mellan länkarna */
+  }
+
   .menu-item {
     margin-bottom: 2rem; /* Minska mellanrummet mellan menykategorierna på mobila enheter */
   }
